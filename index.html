@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tik Tak Top Course</title>
+    <title>Tik Tak Top Course - Kursus Teknologi Futuristik</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
@@ -12,118 +12,333 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Orbitron:wght@400;500;700;800;900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="gambar fm.png" />
   </head>
 
   <body>
     <!-- ================= NAVBAR ================= -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
       <div class="brand">
-        <img src="gambar mu.jpeg" alt="Logo Tik Tak Top" class="logo" />
-        <span class="brand-name">Tik Tak Top</span>
+        <img src="gambar fm.png" alt="Logo Tik Tak Top" class="logo" />
+        <span class="brand-name">TIK TAK TOP</span>
       </div>
 
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
+        <li>
+          <a href="#home"><i class="fas fa-terminal"></i> HOME</a>
+        </li>
+        <li>
+          <a href="#about"><i class="fas fa-code"></i> ABOUT</a>
+        </li>
 
         <li class="dropdown">
-          <a href="#layanan" class="dropbtn">Layanan ▾</a>
+          <a href="#layanan" class="dropbtn"
+            ><i class="fas fa-cogs"></i> LAYANAN ▾</a
+          >
           <div class="dropdown-content">
-            <a href="#pendaftaran">Pendaftaran Anggota</a>
-            <a href="#info-layanan">Informasi Layanan</a>
+            <a href="#pendaftaran"
+              ><i class="fas fa-user-plus"></i> PENDAFTARAN</a
+            >
+            <a href="#info-layanan"
+              ><i class="fas fa-info-circle"></i> INFORMASI</a
+            >
+            <a href="#features"><i class="fas fa-rocket"></i> TEKNOLOGI</a>
           </div>
         </li>
 
-        <li><a href="#koleksi">Koleksi</a></li>
+        <li>
+          <a href="#koleksi"><i class="fas fa-database"></i> KOLEKSI</a>
+        </li>
       </ul>
 
-      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <button class="menu-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
     </nav>
 
-    <!-- ================= HERO ================= -->
+    <!-- ================= HERO SECTION ================= -->
     <section id="home" class="hero">
-      <div class="hero-overlay"></div>
+      <div class="tech-elements">
+        <div class="tech-element"></div>
+        <div class="tech-element"></div>
+        <div class="tech-element"></div>
+      </div>
+
       <div class="hero-content">
-        <h1>Belajar Web & Digital dengan Semangat Juara</h1>
+        <h1>TRANSFORMASI DIGITAL</h1>
+        <span>ERA TEKNOLOGI FUTURISTIK</span>
         <p class="subtitle">
-          Program kursus online berkualitas untuk generasi kreatif dan ambisius
+          Tingkatkan skill teknologi Anda dengan program kursus premium berbasis
+          AI, Cloud Computing, dan teknologi terkini. Bergabunglah dengan
+          komunitas developer masa depan dan raih karir di industri teknologi.
         </p>
-        <a href="#pendaftaran" class="btn-cta">Daftar Sekarang</a>
+        <a href="#pendaftaran" class="btn-cta">
+          <i class="fas fa-rocket"></i> DAFTAR SEKARANG
+        </a>
+
+        <div style="margin-top: 3rem">
+          <span class="tech-badge">AI & Machine Learning</span>
+          <span class="tech-badge">Web Development</span>
+          <span class="tech-badge">Cloud Computing</span>
+          <span class="tech-badge">Cyber Security</span>
+          <span class="tech-badge">Data Science</span>
+        </div>
       </div>
     </section>
 
-    <!-- ================= ABOUT ================= -->
+    <!-- ================= ABOUT SECTION ================= -->
     <section id="about" class="content-section">
-      <h2>About</h2>
+      <h2>TENTANG KAMI</h2>
       <p>
-        Lembaga Kursus Komputer Tik Tak Top menyediakan berbagai program kursus
-        online dengan materi terbaru, instruktur profesional, dan pendampingan
-        intensif untuk meningkatkan skill digital peserta.
+        <strong>Tik Tak Top</strong> adalah institusi pendidikan teknologi yang
+        mengkhususkan diri dalam pelatihan teknologi masa depan. Dengan lebih
+        dari 10 tahun pengalaman, kami telah menghasilkan ribuan profesional
+        teknologi yang bekerja di perusahaan-perusahaan teknologi terkemuka di
+        Indonesia dan internasional.
       </p>
+      <p>
+        Kami menggabungkan kurikulum berbasis industri dengan teknologi
+        pembelajaran terkini seperti Virtual Reality, AI-powered learning, dan
+        platform coding interaktif untuk memberikan pengalaman belajar yang
+        immersive dan efektif.
+      </p>
+
+      <div class="features" style="margin-top: 3rem">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3>AI-Powered Learning</h3>
+          <p>
+            Sistem pembelajaran adaptif yang menggunakan kecerdasan buatan untuk
+            menyesuaikan materi dengan kemampuan setiap peserta.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-vr-cardboard"></i>
+          </div>
+          <h3>Virtual Reality Lab</h3>
+          <p>
+            Fasilitas lab VR untuk simulasi lingkungan kerja nyata dan proyek
+            praktis dalam dunia virtual.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-server"></i>
+          </div>
+          <h3>Cloud Infrastructure</h3>
+          <p>
+            Akses ke server cloud untuk praktik langsung dengan teknologi
+            terbaru di industri.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURES SECTION ================= -->
+    <section id="features" class="content-section">
+      <h2>TEKNOLOGI KAMI</h2>
+      <p>
+        Kami menggunakan teknologi terkini dalam proses pembelajaran untuk
+        memastikan peserta siap menghadapi tantangan industri digital masa
+        depan.
+      </p>
+
+      <div class="features">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-robot"></i>
+          </div>
+          <h3>Artificial Intelligence</h3>
+          <p>
+            Pembelajaran mesin, neural networks, dan AI development dengan
+            framework terbaru.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>Cyber Security</h3>
+          <p>
+            Keamanan siber, ethical hacking, dan proteksi data dengan standar
+            industri.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Data Science</h3>
+          <p>
+            Analisis data besar, visualisasi data, dan pengambilan keputusan
+            berbasis data.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <h3>Cloud Computing</h3>
+          <p>
+            Arsitektur cloud, deployment, dan manajemen infrastruktur dengan
+            AWS, Azure, dan GCP.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- ================= INFO LAYANAN ================= -->
     <section id="info-layanan" class="content-section">
-      <h2>Informasi Layanan</h2>
+      <h2>INFORMASI LAYANAN</h2>
       <p>
-        Layanan kami meliputi kelas online interaktif, modul pembelajaran
-        praktis, latihan proyek, serta sertifikat elektronik yang dapat
-        digunakan sebagai portofolio.
+        Layanan kami dirancang untuk memberikan pengalaman belajar teknologi
+        yang komprehensif dengan pendekatan praktis dan berbasis proyek nyata.
       </p>
+
+      <div class="features">
+        <div class="feature-card">
+          <h3><i class="fas fa-laptop-code"></i> Live Coding Sessions</h3>
+          <p>
+            Sesi coding langsung dengan instruktur untuk menyelesaikan problem
+            nyata dari industri.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <h3><i class="fas fa-project-diagram"></i> Real-World Projects</h3>
+          <p>
+            Pembelajaran berbasis proyek dengan studi kasus dari perusahaan
+            teknologi ternama.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <h3><i class="fas fa-users"></i> Tech Community</h3>
+          <p>
+            Akses ke komunitas eksklusif developer, networking events, dan job
+            fairs teknologi.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <h3><i class="fas fa-certificate"></i> Industry Certification</h3>
+          <p>
+            Sertifikasi yang diakui industri untuk meningkatkan kredibilitas dan
+            peluang karir.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- ================= FORM PENDAFTARAN ================= -->
     <section id="pendaftaran" class="content-section">
-      <h2>Pendaftaran Anggota</h2>
+      <h2>PENDAFTARAN ANGGOTA</h2>
+      <p>
+        Bergabunglah dengan program teknologi masa depan kami. Isi formulir di
+        bawah ini untuk memulai perjalanan karir teknologi Anda.
+      </p>
 
       <form id="registrationForm" class="form-box">
         <div class="form-row">
-          <label>Nama Lengkap</label>
-          <input type="text" name="nama" required />
+          <label for="nama"><i class="fas fa-user"></i> NAMA LENGKAP</label>
+          <input
+            type="text"
+            name="nama"
+            id="nama"
+            required
+            placeholder="Masukkan nama lengkap Anda"
+          />
         </div>
 
         <div class="form-row">
-          <label>Program Kursus</label>
-          <select name="program" required>
-            <option value="">-- Pilih Program --</option>
-            <option>Desain Grafis</option>
-            <option>Web Programming</option>
-            <option>Data Analysis</option>
-            <option>Machine Learning</option>
+          <label for="program"
+            ><i class="fas fa-laptop-code"></i> PROGRAM KURSUS</label
+          >
+          <select name="program" id="program" required>
+            <option value="">-- PILIH PROGRAM TEKNOLOGI --</option>
+            <option>AI & Machine Learning Engineer</option>
+            <option>Full Stack Web Development</option>
+            <option>Data Science & Analytics</option>
+            <option>Cloud Computing & DevOps</option>
+            <option>Cyber Security Specialist</option>
+            <option>Blockchain Development</option>
           </select>
         </div>
 
         <div class="form-row">
-          <label>NIK / Nomor Induk</label>
-          <input type="text" name="nik" required />
+          <label for="nik"
+            ><i class="fas fa-id-card"></i> NIK / NOMOR INDUK</label
+          >
+          <input
+            type="text"
+            name="nik"
+            id="nik"
+            required
+            placeholder="Masukkan NIK atau Nomor Induk"
+          />
         </div>
 
         <div class="form-row">
-          <label>Alamat</label>
-          <input type="text" name="alamat" required />
+          <label for="alamat"
+            ><i class="fas fa-map-marker-alt"></i> ALAMAT LENGKAP</label
+          >
+          <input
+            type="text"
+            name="alamat"
+            id="alamat"
+            required
+            placeholder="Masukkan alamat lengkap Anda"
+          />
         </div>
 
         <div class="form-row">
-          <label>Nomor WhatsApp</label>
-          <input type="text" name="whatsapp" required />
+          <label for="whatsapp"
+            ><i class="fab fa-whatsapp"></i> NOMOR WHATSAPP</label
+          >
+          <input
+            type="text"
+            name="whatsapp"
+            id="whatsapp"
+            required
+            placeholder="Contoh: 081234567890"
+          />
         </div>
 
-        <h3>Pilih Kelas</h3>
+        <h3><i class="fas fa-graduation-cap"></i> PILIH KELAS TEKNOLOGI</h3>
         <div class="form-row">
           <select name="kelas" required>
-            <option value="">-- Pilih Kelas --</option>
-            <option>Kelas Dasar Web</option>
-            <option>Kelas Python Pemula</option>
-            <option>Kelas Excel untuk Data</option>
-            <option>Kelas Desain Grafis</option>
-            <option>Kelas Data Analysis</option>
+            <option value="">-- PILIH KELAS TEKNOLOGI --</option>
+            <option>Kelas Full Stack Web (React + Node.js)</option>
+            <option>Kelas Python untuk AI & Data Science</option>
+            <option>Kelas Cloud Computing dengan AWS</option>
+            <option>Kelas Cyber Security Fundamentals</option>
+            <option>Kelas Mobile App Development (Flutter)</option>
+            <option>Kelas Blockchain & Smart Contracts</option>
           </select>
         </div>
 
-        <button type="submit" class="btn-submit">Kirim Pendaftaran</button>
+        <button type="submit" class="btn-submit">
+          <i class="fas fa-paper-plane"></i> KIRIM PENDAFTARAN
+        </button>
 
         <p id="status" style="margin-top: 10px; font-weight: 600"></p>
       </form>
@@ -131,76 +346,190 @@
 
     <!-- ================= KOLEKSI ================= -->
     <section id="koleksi" class="content-section">
-      <h2>Koleksi</h2>
-      <p>
-        Dokumentasi hasil karya, prestasi, dan inspirasi untuk membangun mental
-        juara dalam dunia digital.
-      </p>
+      <h2>GALERI TEKNOLOGI</h2>
+      <p>kami dalam mengembangkan solusi teknologi inovatif.</p>
 
       <div class="koleksi-grid">
         <div class="koleksi-item">
-          <img src="karya/menang 1.jpeg" alt="Juara 1" />
-          <p>Prestasi Juara Liga</p>
+          <img src="karya/gambar 1.jpeg" alt="tecnology" />
+          <p>teknologi</p>
         </div>
 
         <div class="koleksi-item">
-          <img src="karya/menang 2.jpeg" alt="Juara 2" />
-          <p>Semangat Tim & Kebersamaan</p>
+          <img src="karya/gambar 2.jpeg" alt="Tech Workshop" />
+          <p>Tech Workshop & Seminar AI</p>
         </div>
 
         <div class="koleksi-item">
-          <img src="karya/menang 3.jpeg" alt="Juara 3" />
-          <p>Inspirasi Mental Juara</p>
+          <img src="karya/gambar 3.jpeg" alt="Project Showcase" />
+          <p>Project Showcase Teknologi</p>
         </div>
       </div>
     </section>
 
     <!-- ================= FOOTER ================= -->
     <footer class="footer">
-      <p><strong>Alamat:</strong> Jl. Contoh No. 123, Jakarta</p>
-      <p><strong>Kontak:</strong> +62 812-3456-7890</p>
-      <p>
-        Sosial Media:
-        <a href="#">Instagram</a> | <a href="#">Facebook</a> |
-        <a href="#">Twitter</a>
-      </p>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>TIK TAK TOP TECH</h3>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> <strong>ALAMAT:</strong> Tech
+            Plaza, Jl. Digital No. 123, Jakarta
+          </p>
+          <p>
+            <i class="fas fa-phone"></i> <strong>TELEPON:</strong> +62 21 8888
+            9999
+          </p>
+          <p>
+            <i class="fas fa-envelope"></i>
+            <strong>EMAIL:</strong> tech@tiktaktop.com
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h3>TECH LINKS</h3>
+          <p>
+            <a href="#home"><i class="fas fa-chevron-right"></i> Home</a>
+          </p>
+          <p>
+            <a href="#about"><i class="fas fa-chevron-right"></i> About Tech</a>
+          </p>
+          <p>
+            <a href="#pendaftaran"
+              ><i class="fas fa-chevron-right"></i> Tech Program</a
+            >
+          </p>
+          <p>
+            <a href="#koleksi"
+              ><i class="fas fa-chevron-right"></i> Tech Gallery</a
+            >
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h3>FOLLOW OUR TECH</h3>
+          <p>Ikuti perkembangan teknologi kami di platform berikut:</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-discord"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
       <p class="footer-copy">
-        &copy; 2025 Tik Tak Top Course. All rights reserved.
+        &copy; 2025 <i class="fas fa-copyright"></i> Tik Tak Top Tech. All
+        rights reserved. | <i class="fas fa-code"></i> with
+        <i class="fas fa-heart" style="color: #ff0080"></i> for Future
+        Developers
       </p>
     </footer>
 
+    <!-- ================= BACK TO TOP BUTTON ================= -->
+    <button class="back-to-top" id="backToTop">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
     <!-- ================= JAVASCRIPT ================= -->
     <script>
+      // Navbar scroll effect
+      window.addEventListener("scroll", function () {
+        const navbar = document.getElementById("navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+
+        // Back to top button visibility
+        const backToTop = document.getElementById("backToTop");
+        if (window.scrollY > 300) {
+          backToTop.classList.add("visible");
+        } else {
+          backToTop.classList.remove("visible");
+        }
+      });
+
+      // Back to top functionality
+      document
+        .getElementById("backToTop")
+        .addEventListener("click", function () {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+
+      // Form submission to Google Sheets
       const scriptURL =
         "https://script.google.com/macros/s/AKfycbz0RADsGGybpaa_zbB2g_7Lofv8JuIgccP_bit1R_RPrLYXRkFvYNmdXrP2UaK6YqY_/exec";
-
       const form = document.getElementById("registrationForm");
       const statusText = document.getElementById("status");
 
       form.addEventListener("submit", function (e) {
         e.preventDefault();
-        statusText.innerHTML = "⏳ Mengirim data...";
-        statusText.style.color = "black";
+        statusText.innerHTML =
+          "<i class='fas fa-spinner fa-spin'></i> MENGIRIM DATA KE SERVER...";
+        statusText.style.color = "var(--secondary)";
+        statusText.style.backgroundColor = "rgba(0, 212, 255, 0.1)";
+        statusText.style.padding = "15px";
+        statusText.style.borderRadius = "var(--radius)";
+        statusText.style.border = "1px solid rgba(0, 212, 255, 0.3)";
 
         fetch(scriptURL, {
           method: "POST",
           body: new FormData(form),
         })
           .then(() => {
-            statusText.innerHTML = "✅ Pendaftaran berhasil! Data tersimpan.";
-            statusText.style.color = "green";
+            statusText.innerHTML =
+              "<i class='fas fa-check-circle'></i> PENDAFTARAN BERHASIL! Data telah tersimpan di sistem kami. Tim teknologi akan menghubungi Anda.";
+            statusText.style.color = "#00ff9d";
+            statusText.style.backgroundColor = "rgba(0, 255, 157, 0.1)";
+            statusText.style.border = "1px solid rgba(0, 255, 157, 0.3)";
             form.reset();
+
+            // Show confirmation animation
+            const btnSubmit = document.querySelector(".btn-submit");
+            btnSubmit.innerHTML = "<i class='fas fa-check'></i> DATA TERKIRIM!";
+            btnSubmit.style.background =
+              "linear-gradient(90deg, #00ff9d 0%, #009dff 100%)";
+
+            setTimeout(() => {
+              btnSubmit.innerHTML =
+                "<i class='fas fa-paper-plane'></i> KIRIM PENDAFTARAN";
+              btnSubmit.style.background = "var(--gradient-accent)";
+            }, 3000);
           })
           .catch(() => {
-            statusText.innerHTML = "❌ Terjadi kesalahan. Silakan coba lagi.";
-            statusText.style.color = "red";
+            statusText.innerHTML =
+              "<i class='fas fa-exclamation-circle'></i> ERROR: Gagal mengirim data. Silakan coba lagi atau hubungi support teknologi kami.";
+            statusText.style.color = "#ff0080";
+            statusText.style.backgroundColor = "rgba(255, 0, 128, 0.1)";
+            statusText.style.border = "1px solid rgba(255, 0, 128, 0.3)";
           });
       });
 
+      // Mobile menu toggle
       function toggleMenu() {
-        document.querySelector(".nav-links").classList.toggle("active");
+        const navLinks = document.querySelector(".nav-links");
+        const menuToggle = document.querySelector(".menu-toggle");
+
+        navLinks.classList.toggle("active");
+
+        // Change menu icon
+        const icon = menuToggle.querySelector("i");
+        if (navLinks.classList.contains("active")) {
+          icon.classList.remove("fa-bars");
+          icon.classList.add("fa-times");
+        } else {
+          icon.classList.remove("fa-times");
+          icon.classList.add("fa-bars");
+        }
       }
 
+      // Dropdown functionality
       document.querySelectorAll(".dropdown").forEach((item) => {
         item.addEventListener("click", function (e) {
           e.stopPropagation();
@@ -208,11 +537,100 @@
         });
       });
 
+      // Close dropdowns when clicking outside
       window.addEventListener("click", function () {
-        document
-          .querySelectorAll(".dropdown-content")
-          .forEach((el) => el.classList.remove("show"));
+        document.querySelectorAll(".dropdown-content").forEach((el) => {
+          el.classList.remove("show");
+        });
       });
+
+      // Add typing effect to subtitle
+      const subtitle = document.querySelector(".subtitle");
+      const text = subtitle.textContent;
+      subtitle.textContent = "";
+      let i = 0;
+
+      function typeWriter() {
+        if (i < text.length) {
+          subtitle.textContent += text.charAt(i);
+          i++;
+          setTimeout(typeWriter, 30);
+        }
+      }
+
+      // Start typing effect when page loads
+      window.addEventListener("load", function () {
+        setTimeout(typeWriter, 1000);
+      });
+
+      // Add tech particles effect
+      function createTechParticle() {
+        const particle = document.createElement("div");
+        particle.classList.add("tech-particle");
+        particle.style.position = "fixed";
+        particle.style.width = Math.random() * 5 + 2 + "px";
+        particle.style.height = particle.style.width;
+        particle.style.background =
+          Math.random() > 0.5 ? "var(--secondary)" : "var(--accent)";
+        particle.style.borderRadius = "50%";
+        particle.style.left = Math.random() * 100 + "vw";
+        particle.style.top = "-10px";
+        particle.style.boxShadow = `0 0 ${Math.random() * 10 + 5}px ${
+          particle.style.background
+        }`;
+        particle.style.zIndex = "-1";
+        document.body.appendChild(particle);
+
+        // Animate particle
+        const animation = particle.animate(
+          [
+            { transform: "translateY(0) rotate(0deg)", opacity: 1 },
+            {
+              transform: `translateY(${window.innerHeight + 10}px) rotate(${
+                Math.random() * 360
+              }deg)`,
+              opacity: 0,
+            },
+          ],
+          {
+            duration: Math.random() * 3000 + 2000,
+            easing: "linear",
+          }
+        );
+
+        // Remove particle after animation
+        animation.onfinish = () => {
+          particle.remove();
+        };
+      }
+
+      // Create particles periodically
+      setInterval(createTechParticle, 300);
+
+      // Add animation on scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -100px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, observerOptions);
+
+      // Observe elements for animation
+      document
+        .querySelectorAll(".content-section, .feature-card, .koleksi-item")
+        .forEach((el) => {
+          el.style.opacity = "0";
+          el.style.transform = "translateY(30px)";
+          el.style.transition = "opacity 0.8s ease, transform 0.8s ease";
+          observer.observe(el);
+        });
     </script>
   </body>
 </html>
